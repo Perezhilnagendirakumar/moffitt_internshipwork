@@ -1,9 +1,9 @@
 # "Deciphering Cancer Heterogeneity: Computational Biology Insights into immuno microenvironment differences in Head and Neck Squamous Cell Carcinoma (HNSCC) ".
 
-The introduction of single-cell RNA sequencing (scRNA-seq) technology has transformed biomedical research, allowing the detailed study of individual cells. The increasing data throughput and enhanced efficiency have resulted in scRNA-seq datasets containing transcription profiles of over a million cells, accompanied by a substantial increase in available analysis tools. Despite these advancements, fully dissecting cellular heterogeneity within a large cell population remains a computational challenge. This repo presents steps needed to make sense of single-cell RNA sequencing (scRNA) data. I used a scRNA dataset named Immune landscape of viral- and carcinogen-drived head and neck cancer published in Nature Communications. 
+The introduction of single-cell RNA sequencing (scRNA-seq) technology has transformed biomedical research, allowing the detailed study of individual cells. The increasing data throughput and enhanced efficiency have resulted in scRNA-seq datasets containing transcription profiles of over a million cells, accompanied by a substantial increase in available analysis tools. Despite these advancements, fully dissecting cellular heterogeneity within a large cell population remains a computational challenge. This repo presents steps needed to make sense of single-cell RNA sequencing (scRNA) data. I used a scRNA dataset from the article Immune landscape of viral- and carcinogen-drived head and neck cancer published in Nature Communications. 
 
 ### ScRNA analysis using Seurat  
-The processed gene barcode matrices were collected from the GEO database for HPV+ and HPV- HNSCC . Seurat V5 was used for preprocessing , Integration , batch effect reduction and unsupervised clustering . 
+Single-cell RNA sequencing (scRNA-seq) datasets were downloaded from the Gene Expression Omnibus through accession number GEO: GSE139324.The study included measurements from 131,224 individual immune cells in the TME from patients with HPV− (n = 18) and HPV + HNSCC (n = 8) who were immunotherapy treatment-naïve. Seurat V5 was used for preprocessing , Integration , batch effect reduction and unsupervised clustering . 
  
 ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/dc1700b4-aa9d-4b8b-9a6f-9ad4a0e2d472)![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/d2d130be-7803-4937-a6d6-be478978b136)![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/87089ce9-39f6-4f0d-905e-e86a63223566)![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/f5f02d55-458b-4225-b20e-6d1783897243)
 
@@ -55,9 +55,21 @@ According to the Rational Barplot mentioned above two group of cell types like B
 ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/03f33114-33d9-4017-8293-beba9e3bd220)
 
 ### WGCNA (Weighted Gene Coexpression network analysis) 
+Clustering dendrogram of genes. Gene clustering tree (dendrogram) obtained by hierarchical clustering of adjacency-based dissimilarity. The colored row below the dendrogram indicates module membership identified by the dynamic tree cut method, together with assigned merged module colors and the original module colors.
 
-![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/03405cfc-791e-4983-8427-19df3bdbc9c8) ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/bb00c233-d5a3-4f98-a0c0-0ea888b4d453 ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/08a7014d-b4a0-422b-86be-3c2fe3de65a3)
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/03405cfc-791e-4983-8427-19df3bdbc9c8) 
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/cf92ae9d-e9fa-4616-ae18-9e3bf4451604)
 
+
+### Identification of the modules of interest that best represent the gene expression in rare cell or minor cell populations identified by tools such as FIRE, Giniclust2, and GapClust.
+
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/08a7014d-b4a0-422b-86be-3c2fe3de65a3)
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/2c9be4cc-deee-46aa-8246-bfdce6def0bb)
+
+
+###  Conclusion 
+
+The gene expression profiles of minor cell populations were closely associated with Type I interferon cellular responses, as evidenced by Gene Ontology Biological Process (GO_BP) enrichment analysis. Type I interferons (IFNs) are pivotal cytokines in antiviral defense, orchestrating both innate and adaptive immune responses. IFNs amplify B lymphocyte responses to viral challenges, fostering the production of cytotoxic and neutralizing antibodies. Their multifaceted impact on B-cell function encompasses receptor engagement, Toll-like receptor expression, cell migration, antigen presentation, cytokine responsiveness, cytokine production, survival, differentiation, and class-switch recombination.Remarkably, the Type I interferon response was significantly enriched in HPV+ HNSCC populations. This Type I interferon response was prominently observed during the transition from activated B cells(ABC)to antibody-secreting B cells (ASC), peaking as pseudotime increased, and gradually declining post-transition. This dynamic regulation underscores the role of Type I interferons in the differentiation process of B cells, further emphasizing their relevance in the immune landscape of HPV+ HNSCC and potential therapeutic avenues.
 
 
 
