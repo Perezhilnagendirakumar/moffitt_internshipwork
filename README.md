@@ -47,6 +47,34 @@ According to the Rational Barplot mentioned above two group of cell types like B
 ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/120ae284-7e98-4225-a6ff-39f7b9c3e444)
 
 
+### Rare cell /minor cell population  Identification using FIRE, Giniclust2 and Gapclust 
+
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/e13d136b-5234-496e-b2a2-69f0cdf2a697)
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/c0703de3-ff5f-4982-b576-e3c96f998011)
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/571177c4-6ecd-4c0f-8ccc-c522e52aff8d)
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/03f33114-33d9-4017-8293-beba9e3bd220)
+
+### WGCNA (Weighted Gene Coexpression network analysis) 
+
+![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/03405cfc-791e-4983-8427-19df3bdbc9c8) ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/bb00c233-d5a3-4f98-a0c0-0ea888b4d453 ![image](https://github.com/Perezhilnagendirakumar/moffitt_internshipwork/assets/97453603/08a7014d-b4a0-422b-86be-3c2fe3de65a3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
