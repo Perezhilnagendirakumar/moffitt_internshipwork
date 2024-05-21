@@ -3,7 +3,7 @@
 
 
 ## Set local Github repository as working directory
-setwd("scRNA_docker")
+setwd("scRNA_workflow")
 
 ## Desired project name
 Project_Name <- "GSE116256_AMLscRNA"
