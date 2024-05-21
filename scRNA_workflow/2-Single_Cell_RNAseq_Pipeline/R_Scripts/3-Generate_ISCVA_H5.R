@@ -3,7 +3,7 @@
 
 
 ## Set local Github repository as working directory
-setwd("scRNA_docker")
+setwd("scRNA_workflow")
 
 ## Load Functions from Customized ISCVAM H5 File
 source("Single_Cell_RNAseq_Pipeline/R_Scripts/R/write.h5.R")
