@@ -1,0 +1,1 @@
+docker build -t sc_rnaseq_analysis_app .

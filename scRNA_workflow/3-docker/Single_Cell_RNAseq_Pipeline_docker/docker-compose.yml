@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sc-app:
+    image: sc_rnaseq_analysis_app:latest
+    container_name: sc_rnaseq_analysis_container
+    volumes:
+      - ./app:/app
+    command: ["Rscript", "/app/SC_RNA_analysis.R"]
+
+
