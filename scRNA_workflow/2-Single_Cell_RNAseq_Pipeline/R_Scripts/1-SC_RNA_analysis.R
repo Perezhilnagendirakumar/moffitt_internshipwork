@@ -172,7 +172,7 @@ for (i in names(seurat_obj@assays)) {
   raw_counts <- as.data.frame(seurat_obj@assays[[i]]@counts)
   normalized_data <- as.data.frame(seurat_obj@assays[[i]]@data)
   
-  # Add row names as a column for Alyssa Umap app
+  # Add row names as a column for Umap app
   scaled_counts <- tibble::rownames_to_column(scaled_counts, var = "Genes")
   raw_counts <- tibble::rownames_to_column(raw_counts, var = "Genes")
   normalized_data <- tibble::rownames_to_column(normalized_data, var = "Genes")
